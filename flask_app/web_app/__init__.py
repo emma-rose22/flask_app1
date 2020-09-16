@@ -2,6 +2,7 @@ from flask import Flask
 
 #moves route definitions to another location
 from web_app.routes.home_routes import home_routes
+from web_app.routes.book_routes import book_routes
 
 #function returns an app
 def create_app():
@@ -11,6 +12,7 @@ def create_app():
     #then we take those routes and register them to our app
     
     app.register_blueprint(home_routes)
+    app.register_blueprint(book_routes)
     return app
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ home_routes = Blueprint("home_routes", __name__)
 #but we are assigning it to the blueprint instead of to the app directly
 @home_routes.route('/')
 def index():
-    x = 2 + 2
+    x = 2 + 5
     return f"Hello World! {x}"
 
 @home_routes.route('/about')
